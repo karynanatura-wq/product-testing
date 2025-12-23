@@ -31,8 +31,7 @@ function addToBox(product) {
         selectedProducts.push(product);
         let stars = document.createElement('div');
         stars.classList.add('stars');
-        stars.textContent = '⭐';
-        product.appendChild(stars);
+        box.appendChild(stars);
 
         if (selectedProducts.length === 3) {
             box.classList.add('active');
